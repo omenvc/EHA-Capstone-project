@@ -12,7 +12,6 @@ type SearchItem = {
   actionLabel: string;
 };
 
-// Generate 20 fake people
 const people: SearchItem[] = Array.from({ length: 20 }, () => {
   const roleType = faker.helpers.arrayElement(["Nurse", "Patient", "Sponsor"]);
   let role = "";
