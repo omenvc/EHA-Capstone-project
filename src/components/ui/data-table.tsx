@@ -223,11 +223,6 @@ const CustomDataTable: React.FC<{ users: Users }> = ({ users }) => {
     currentPage * rowsPerPage,
   );
 
-  const handleNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(prev => Math.min(prev + 1, totalPages));
-    }
-  };
   const handlePreviousPage = () => {
     if (currentPage > 1) {
       setCurrentPage(prev => Math.max(prev - 1, 1));

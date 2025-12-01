@@ -55,7 +55,8 @@ const patients: Patient[] = [
 
 export default function PatientChat() {
   const [activeId, setActiveId] = useState<number>(1);
-  const [messages, setMessages] = useState<Message[]>([]);
+  // Note: messages state reserved for future real-time messaging functionality
+  const [, setMessages] = useState<Message[]>([]);
   const activePatient = patients.find(p => p.id === activeId);
 
   const addMessage = (type: MessageType, content: string | File | Blob) => {
