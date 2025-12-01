@@ -27,7 +27,7 @@ export function GenderPieChart() {
               outerRadius={50}
               paddingAngle={3}
             >
-              {data.map((entry, index) => (
+              {data.map((_, index) => (
                 <Cell key={`cell-${index}`} fill={COLORS[index]} />
               ))}
             </Pie>
